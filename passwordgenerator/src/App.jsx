@@ -50,12 +50,12 @@ function App() {
   return (
     <>
     <div className="flex items-center justify-center min-h-screen bg-blue-100">
-  <div className="w-1/2 bg-white p-6 rounded shadow text-center">
+    <div className="w-11/12 md:w-1/2 bg-white p-0 md:p-6 rounded shadow text-center">
     
-    <h1 className="text-3xl font-bold mb-4">Password Generator</h1>
+    <h1 className="text-3xl font-bold mb-4 p-6">Password Generator</h1>
     
     {/* Input and Button Container */}
-    <div className="flex items-center justify-center space-x-2 mb-6">
+    <div className="flex items-center justify-center space-x-2 mb-6  m-5">
       <input
         type="text"
         placeholder="Password"
@@ -72,7 +72,7 @@ function App() {
     </div>
 
     {/* Range Slider */}
-    <div className="w-full mb-6">
+    <div className="w-full mb-6 pl-6 pr-6">
       <label htmlFor="range" className="block mb-2 text-gray-700 font-semibold">
         Select Value: {length}
       </label>
@@ -88,7 +88,7 @@ function App() {
     </div>
 
     {/* Checkboxes */}
-    <div className="flex items-center justify-center space-x-6">
+    <div className="flex items-center justify-center space-x-6 pb-6">
       <label className="flex items-center space-x-2">
         <input 
         type="checkbox"
