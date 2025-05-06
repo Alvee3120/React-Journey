@@ -1,0 +1,5 @@
+{
+    "tailwindCSS.experimental.configFile": null,
+    "eslint.onIgnoredFiles": "off",
+    "eslint.format.enable": true
+}

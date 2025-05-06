@@ -135,10 +135,10 @@ function App() {
 
   return (
     <>
-    <div className='flex flex-wrap items-center justify-content h-screen '>
+    <div className='flex te flex-wrap items-center justify-content h-screen '>
 
 
-    {people.map( (p) =>{ return <div className=' border bg-blue-200 w-80 h-60 p-10 m-2 grid place-items-center rounded-2xl'>
+    {people.map( (p) =>{ return <div className=' border  bg-blue-200 w-80 h-60 p-10 m-2 grid place-items-center rounded-2xl'>
 
         <h2>Name: {p.name}</h2>
         <h4>Age: {p.age}</h4>
