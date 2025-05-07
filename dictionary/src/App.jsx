@@ -5,24 +5,32 @@ import "./App.css";
 
 function App() {
   const [resData, setResData] = useState('')
+  const [userinput, setUserinput] =useState('')
 
+const handleSubmit = (e) =>{
+  e.preventDefault();
+  console.log(userinput);}
 
   useEffect(() => {
     const fetchedData = async() =>{
    
-  const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/book`);
+  const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${userinput}`);
   // console.log(response); 
   const data = await response.json();
   console.log(data[0]);
   setResData(data[0])
   // console.log();
   
+  
       
-}
+
+
+  
+ }
 
   
   fetchedData();
-},[]);
+},[userinput]);
   
   return (
     <>
@@ -39,10 +47,13 @@ function App() {
             </h3>
             <input
               placeholder="Search a word here..."
+              value={userinput}
+              onChange={(e)=> setUserinput(e.target.value)}
               className="p-3 border w-[100%] py-3 rounded-xl mb-2"
             ></input>
-            <button
+            <button 
               type="submit"
+              onClick={handleSubmit}
               className="w-[100%] bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300"
             >
               Search
