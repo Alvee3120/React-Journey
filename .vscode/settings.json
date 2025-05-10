@@ -1,5 +1,14 @@
 {
-    "tailwindCSS.experimental.configFile": null,
-    "eslint.onIgnoredFiles": "off",
-    "eslint.format.enable": true
+  // Place your settings here to customize your VS Code environment
+  "editor.tabSize": 2, // Default tab size
+  "editor.formatOnSave": true, // Automatically format files on save
+  "files.autoSave": "afterDelay", // Automatically save files after a delay
+  "files.exclude": {
+    "**/.git": true, // Hide .git folder
+    "**/.DS_Store": true // Hide .DS_Store files
+  },
+  "javascript.preferences.quoteStyle": "double", // Use double quotes in JavaScript
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
 }
