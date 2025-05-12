@@ -4,7 +4,10 @@ import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)//
+<<<<<<< HEAD
   //hi
+=======
+>>>>>>> 259a6ef (Commit on April 27, 2025)
 
   return (
     <>
